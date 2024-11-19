@@ -13,7 +13,7 @@ export class AnimeService {
 
   constructor(private http: HttpClient) { }
 
-  getBooks(): Observable<Anime[]> {
+  getAnimes(): Observable<Anime[]> {
     return this.http.get<Anime[]>(this.apiUrl);
   }
 

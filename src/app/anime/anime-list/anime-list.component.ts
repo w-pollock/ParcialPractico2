@@ -15,7 +15,7 @@ export class AnimeListComponent implements OnInit {
   constructor(private animeService: AnimeService) { }
 
   getAnimes(): void {
-    this.animeService.getBooks().subscribe((animes) => {
+    this.animeService.getAnimes().subscribe((animes) => {
       this.animes = animes;
     });
   }
