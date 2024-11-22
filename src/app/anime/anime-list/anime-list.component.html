@@ -1,7 +1,11 @@
+  <div class="banner" style="background-color: blue;">
+    <img src="assets/animeLogo.png" alt="Anime Logo" class="text-center">
+  </div>
+  
   <br>
   <div class="container contenedor-animes">
   <div class="row">
-    <p>La cantidad total de episodios es 2326 y el rating promedio es 8.03</p>
+    <p>La cantidad total de episodios es {{totalEpisodios()}} y el rating promedio es {{ratingPromedio()}}</p>
     <div *ngIf="selected">
       <app-anime-detail [animeDetail]="selectedBAnime"></app-anime-detail>
       <hr>
@@ -16,3 +20,5 @@
 
   </div>
 </div>
+
+//no pude ver el sitio web porque no cargo npm install
